@@ -7,19 +7,20 @@ import { LoginPage } from "./pages/LoginPage";
 import { HomePage } from "./pages/HomePage";
 import { DownBar } from "./components/DownBar";
 import { TrafficPage } from "./pages/TrafficPage";
+import { Outlet, useLocation } from "react-router";
 
+function App() {
+  const location = useLocation();
 
-
-
-function App(){
-  
+  console.log(location.pathname)
   return (
-    // <SplashScreen/>
-    // <LoginPage/>
-    // <HomePage/>
-    // <DownBar/>
-    <TrafficPage/>
-  )
+    <div>
+      <Outlet />
+
+      {location.pathname === "/traffic" || location.pathname === "/login" ? null :
+      <DownBar/>}
+    </div>
+  );
 }
 
 export default App;

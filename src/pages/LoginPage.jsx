@@ -2,28 +2,19 @@ import { useState } from "react";
 import { TEXT } from "../utils/TEXT";
 import { COLORS, RADIUS } from "../utils/COLORS";
 import { PrimaryButton } from "../components/custom/PrimaryButton";
-
-// export const LoginPage = ({ onLogin }) => {
-//   const [showToast, setShowToast] = useState(false);
-//   const handleLogin = () => {
-//     setShowToast(true);
-//     setTimeout(() => {
-//       setShowToast(false);
-//       onLogin("home");
-//     }, 1000);
-//   };
+import { useNavigate } from "react-router";
 
 export const LoginPage = () => {
+  const navigate = useNavigate();
+
   const [showToast, setShowToast] = useState(false);
   const handleLogin = () => {
     setShowToast(true);
     setTimeout(() => {
       setShowToast(false);
-      // onLogin("home");
+      navigate("/home");
     }, 1000);
   };
-
-  console.log(TEXT.bn.loginBtn);
 
   return (
     <div

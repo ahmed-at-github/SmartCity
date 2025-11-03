@@ -1,5 +1,5 @@
 export const COLORS = {
-  primary: '#004E98', // Deep Blue (Trust)
+  primary: `#004E98`, // Deep Blue (Trust)
   accent: '#FF6B35',  // Bright Coral/Orange (Energy)
   secondary: '#E8E8E8', // Light Gray
   background: '#FAFAFA', // Soft White

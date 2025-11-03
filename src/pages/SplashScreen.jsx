@@ -1,22 +1,17 @@
 import { useEffect } from "react";
 import { COLORS } from "../utils/COLORS";
 import { TEXT } from "../utils/TEXT";
-
-// export const SplashScreen = ({ onFinish }) => {
-//     useEffect(() => {
-//     const timer = setTimeout(() => {
-//       onFinish('login');
-//     }, 2000); // Wait 2 seconds then go to login
-//     return () => clearTimeout(timer);
-//   }, [onFinish]);
+import { useNavigate } from "react-router";
 
 export const SplashScreen = () => {
+  const navigate = useNavigate(); 
+  
     useEffect(() => {
     const timer = setTimeout(() => {
-    
-    }, 2000); // Wait 2 seconds then go to login
+      navigate("/login")
+    }, 2500); // Wait 2 seconds then go to login
     return () => clearTimeout(timer);
-  }, );
+  }, []);
 
   return (
     <div

@@ -18,38 +18,19 @@ import {
   Loader,
   Sparkles,
   ChevronDown,
-  ChevronUp
-} from 'lucide-react';
+  ChevronUp,
+} from "lucide-react";
 import { IconButton } from "./custom/IconButton";
+import { useNavigate } from "react-router";
 export function DownBar() {
+  const navigate = useNavigate();
   const [currentPage, setCurrentPage] = useState("home"); // splash, login, home, traffic, safety, pricing, reports
-
-  // const renderScreen = () => {
-  //   switch (currentPage) {
-  //     case "splash":
-  //       return <SplashScreen onFinish={setCurrentPage} />;
-  //     case "login":
-  //       return <LoginScreen onLogin={setCurrentPage} />;
-  //     case "home":
-  //       return <HomeScreen navigate={setCurrentPage} />;
-  //     case "traffic":
-  //       return <TrafficScreen />;
-  //     case "safety":
-  //       return <SafetyScreen />;
-  //     case "pricing":
-  //       return <PricingScreen />;
-  //     case "reports":
-  //       return <ReportScreen />;
-  //     default:
-  //       return <HomeScreen navigate={setCurrentPage} />;
-  //   }
-  // };
 
   const showNavbar = currentPage !== "splash" && currentPage !== "login";
 
   return (
     <div
-      className="max-w-md mx-auto h-screen w-full shadow-2xl flex flex-col"
+      className="max-w-md mx-auto w-full shadow-2xl flex flex-col"
       style={{
         backgroundColor: COLORS.background,
         fontFamily: "Inter, Poppins, sans-serif",
@@ -66,7 +47,10 @@ export function DownBar() {
             icon={Home}
             labelEn={TEXT.en.home}
             labelBn={TEXT.bn.home}
-            onClick={() => setCurrentPage("home")}
+            onClick={() => {
+              navigate("/home");
+              setCurrentPage("home");
+            }}
             isActive={currentPage === "home"}
           />
           <IconButton
@@ -101,7 +85,11 @@ export function DownBar() {
             icon={User}
             labelEn={TEXT.en.profile}
             labelBn={TEXT.bn.profile}
-            onClick={() => setCurrentPage("profile")}
+            onClick={() => {
+               setCurrentPage("profile");
+              navigate("/profile");
+             
+            }}
             isActive={currentPage === "profile"}
           />
         </div>

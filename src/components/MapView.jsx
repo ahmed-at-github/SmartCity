@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 export const MapView = () => {
   useEffect(() => {
     // Create the map
-    const map = L.map("map").setView([51.505, -0.09], 13);
+    const map = L.map("map").setView([22.3752, 91.8349], 13);
 
     // Add the base tile layer (from OpenStreetMap)
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -13,9 +13,9 @@ export const MapView = () => {
     }).addTo(map);
 
     // Add a marker
-    L.marker([51.505, -0.09])
+    L.marker([22.3752, 91.8349])
       .addTo(map)
-      .bindPopup("Hello from Leaflet!")
+      .bindPopup("Hello!")
       .openPopup();
 
     // Cleanup on unmount
@@ -28,7 +28,7 @@ export const MapView = () => {
     <div
       id="map"
       style={{
-        height: "500px",
+        height: "300px",
         width: "100%",
       }}
     ></div>
