@@ -1,16 +1,20 @@
-# React + Vite
+# Pathik — Smart City Navigation & Safety Assistance UI  
+### by Team **Poriborton**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> _“Making everyday life smarter, safer, and more convenient.”_
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+**Pathik** is a **Smart City Navigation and Safety Assistance System** designed to make urban navigation safer and more reliable — especially for **women and vulnerable citizens**.  
+This repository contains the **User Interface (UI)** of the Pathik platform.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Our goal is to combine **real-time navigation**, **safety alerts**, and **community-driven support** into a single, intuitive experience that empowers users to move confidently through the city.
 
-## Expanding the ESLint configuration
+### This is a prototype UI for our Idea.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+
