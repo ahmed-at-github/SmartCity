@@ -11,6 +11,7 @@ import { SafetyPage } from "./pages/SafetyPage";
 import { ReportPage } from "./pages/ReportPage";
 import { FairPrice } from "./pages/FairPrice";
 
+
 export const rootRouter = createBrowserRouter([
   {
     path: "/",

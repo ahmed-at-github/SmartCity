@@ -99,9 +99,7 @@ export const FairPrice = () => {
             </p>
           </div>
           <div>
-            <p className="text-xs text-gray-500 uppercase font-bold">
-              Average
-            </p>
+            <p className="text-xs text-gray-500 uppercase font-bold">Average</p>
             <p className="text-2xl font-extrabold text-blue-600">
               ৳{priceData.avg}
             </p>
@@ -141,10 +139,12 @@ export const FairPrice = () => {
       {showAdvisory && (
         <div className="space-y-4 animate-fadeIn">
           <div className="p-4 rounded-2xl bg-base-200 shadow-md border-l-4 border-accent">
-            <h3 className="font-bold text-blue-600 mb-1">💬 দর কষাকষি শুরুর আগে:</h3>
+            <h3 className="font-bold text-blue-600 mb-1">
+              💬 দর কষাকষি শুরুর আগে:
+            </h3>
             <p className="text-sm text-gray-700">
-              এলাকাটি নিরাপদ কিনা নিশ্চিত হও। প্রয়োজনে বন্ধুকে সঙ্গে নাও এবং
-              সময় নির্ধারণ করে বের হও।
+              এলাকাটি নিরাপদ কিনা নিশ্চিত হও। প্রয়োজনে বন্ধুকে সঙ্গে নাও এবং সময়
+              নির্ধারণ করে বের হও।
             </p>
           </div>
 
@@ -160,8 +160,8 @@ export const FairPrice = () => {
           <div className="p-4 rounded-2xl bg-base-200 shadow-md border-l-4 border-secondary">
             <h3 className="font-bold text-secondary mb-1">⚠️ সতর্কতা:</h3>
             <p className="text-sm text-gray-700">
-              কোনো অনিরাপদ এলাকা বা অজানা ব্যক্তির সাথে লেনদেন করলে আগে
-              লোকেশন যাচাই করো। প্রয়োজনে পুলিশের হেল্পলাইন ব্যবহার করো।
+              কোনো অনিরাপদ এলাকা বা অজানা ব্যক্তির সাথে লেনদেন করলে আগে লোকেশন
+              যাচাই করো। প্রয়োজনে পুলিশের হেল্পলাইন ব্যবহার করো।
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ export const FairPrice = () => {
       )}
 
       {/* Quick Search */}
-      <p className="text-sm font-semibold mb-2 mt-6">
+      <p className="text-sm font-semibold mb-2 mt-6 ">
         Popular Searches (জনপ্রিয় অনুসন্ধান)
       </p>
       <div className="flex overflow-x-auto space-x-3 pb-2 scrollbar-hide">
