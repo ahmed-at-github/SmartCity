@@ -5,7 +5,7 @@ import { Search, Loader, Sparkles, ChevronDown, ChevronUp } from "lucide-react";
 import { PillButton } from "../components/custom/PillButton";
 
 export const FairPrice = () => {
-  const [product, setProduct] = useState("CNG Auto Fare");
+  const [product, setProduct] = useState("CNG Fare");
   const [priceData, setPriceData] = useState({
     avg: 80,
     lowest: 50,
@@ -21,12 +21,12 @@ export const FairPrice = () => {
     setProduct(newProduct);
 
     let newData;
-    if (newProduct === "CNG Auto Fare") {
+    if (newProduct === "CNG Fare") {
       newData = { avg: 80, lowest: 50, highest: 120, visual: 0.6 };
-    } else if (newProduct === "Rice (Basmati)") {
-      newData = { avg: 110, lowest: 95, highest: 140, visual: 0.4 };
+    } else if (newProduct === "Local Bus Fare") {
+      newData = { avg: 15, lowest: 10, highest: 20, visual: 0.7 };
     } else {
-      newData = { avg: 60, lowest: 50, highest: 75, visual: 0.8 };
+      newData = { avg: 200, lowest: 150, highest: 350, visual: 0.8 };
     }
     setPriceData(newData);
     setAdvisoryText("");
@@ -190,26 +190,26 @@ export const FairPrice = () => {
 
       {/* Quick Search */}
       <p className="text-sm font-semibold mb-2 mt-6 ">
-        Popular Searches (জনপ্রিয় অনুসন্ধান)
+        Popular Transport (জনপ্রিয় পরিবহন)
       </p>
       <div className="flex overflow-x-auto space-x-3 pb-2 scrollbar-hide">
         <PillButton
-          onClick={() => handleSearch("CNG Auto Fare")}
-          isActive={product === "CNG Auto Fare"}
+          onClick={() => handleSearch("CNG Fare")}
+          isActive={product === "CNG Fare"}
         >
-          CNG Auto Fare
+          CNG Fare
         </PillButton>
         <PillButton
-          onClick={() => handleSearch("Rice (Basmati)")}
-          isActive={product === "Rice (Basmati)"}
+          onClick={() => handleSearch("Local Bus Fare")}
+          isActive={product === "Local Bus Fare"}
         >
-          Rice (Basmati)
+          Local Bus Fare
         </PillButton>
         <PillButton
-          onClick={() => handleSearch("Potato (Aloo)")}
-          isActive={product === "Potato (Aloo)"}
+          onClick={() => handleSearch("Private Car")}
+          isActive={product === "Private Car"}
         >
-          Potato (Aloo)
+         Private Car
         </PillButton>
       </div>
     </div>
