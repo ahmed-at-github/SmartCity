@@ -57,7 +57,10 @@ export function DownBar() {
             icon={ListChecks}
             labelEn={TEXT.en.reports}
             labelBn={TEXT.bn.reports}
-            onClick={() => setCurrentPage("reports")}
+             onClick={() => {
+              navigate("/report");
+              setCurrentPage("reports");
+            }}
             isActive={currentPage === "reports"}
           />
           {/* Main Action Icon - Safety/SOS */}
@@ -65,7 +68,10 @@ export function DownBar() {
             <button
               className={`w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300
                 bg-[${COLORS.primary}] hover:bg-opacity-90 active:scale-[0.95]`}
-              onClick={() => setCurrentPage("safety")}
+              onClick={() => {
+              navigate("/safety");
+              setCurrentPage("safety");
+            }}
               style={{
                 boxShadow: `0 8px 20px -5px ${COLORS.primary}80`,
               }}
@@ -77,7 +83,10 @@ export function DownBar() {
             icon={Tag}
             labelEn={TEXT.en.fairPrice}
             labelBn={TEXT.bn.fairPrice}
-            onClick={() => setCurrentPage("pricing")}
+            onClick={() => {
+              navigate("/fair-price");
+              setCurrentPage("pricing");
+            }}
             isActive={currentPage === "pricing"}
           />
 

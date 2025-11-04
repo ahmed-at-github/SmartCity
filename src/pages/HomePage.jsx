@@ -73,7 +73,7 @@ export const HomePage = () => {
             titleEn={TEXT.en.fairPrice}
             titleBn={TEXT.bn.fairPrice}
             className="cursor-pointer"
-            // onClick={0} /fairprice
+            onClick={()  => navigate("/fair-price")}
           >
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-2">
@@ -93,7 +93,7 @@ export const HomePage = () => {
             titleEn={TEXT.en.safety}
             titleBn={TEXT.bn.safety}
             className="cursor-pointer"
-            // onClick={0} safety
+            onClick={()  => navigate("/safety")}
           >
             <div className="flex justify-between items-center">
               <div className="flex items-center space-x-2">
@@ -117,7 +117,7 @@ export const HomePage = () => {
           <div className="grid grid-cols-2 gap-4">
             <div
               className={`p-4 bg-[#FF6B35] text-white ${RADIUS} text-center font-bold shadow-md active:scale-[0.98] transition-transform`}
-              // onClick={0} /report
+            onClick={()  => navigate("/report")}
               style={{ boxShadow: `0 4px 10px -3px #FF6B3580` }}
             >
               <ListChecks size={24} className="mx-auto mb-1" />

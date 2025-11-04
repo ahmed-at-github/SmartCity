@@ -7,6 +7,9 @@ import { HomePage } from "./pages/HomePage";
 import { DownBar } from "./components/DownBar";
 import { TrafficPage } from "./pages/TrafficPage";
 import { ProfilePage } from "./pages/ProfilePage";
+import { SafetyPage } from "./pages/SafetyPage";
+import { ReportPage } from "./pages/ReportPage";
+import { FairPrice } from "./pages/FairPrice";
 
 export const rootRouter = createBrowserRouter([
   {
@@ -27,6 +30,18 @@ export const rootRouter = createBrowserRouter([
       {
         path: "/profile",
         element: <ProfilePage />,
+      },
+      {
+        path: "/safety",
+        element: <SafetyPage />,
+      },
+      {
+        path: "/report",
+        element: <ReportPage/>,
+      },
+      {
+        path: "/fair-price",
+        element: <FairPrice />,
       },
     ],
   },
