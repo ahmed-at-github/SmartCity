@@ -13,8 +13,3 @@ This repository contains the **User Interface (UI)** of the Pathik platform.
 Our goal is to combine **real-time navigation**, **safety alerts**, and **community-driven support** into a single, intuitive experience that empowers users to move confidently through the city.
 
 ### This is a prototype UI for our Idea.
-
-
-
-
-
