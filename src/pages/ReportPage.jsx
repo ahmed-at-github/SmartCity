@@ -1,4 +1,10 @@
-const ReportScreen = () => {
+import { useState } from "react";
+import { TEXT } from "../utils/TEXT";
+import { COLORS, RADIUS } from "../utils/COLORS";
+import { Car, ShieldAlert, Tag, Upload, Send } from "lucide-react";
+import { PrimaryButton } from "../components/custom/PrimaryButton";
+
+export const ReportPage = () => {
   const [reportType, setReportType] = useState('');
   const [details, setDetails] = useState('');
   const [showToast, setShowToast] = useState(false);
@@ -70,7 +76,7 @@ const ReportScreen = () => {
 
         {/* Photo Upload */}
         <button
-          className={`w-full py-3 bg-[${COLORS.secondary}] text-[${COLORS.text}] font-semibold ${RADIUS} transition-colors flex items-center justify-center space-x-2`}
+          className={`w-full py-3 bg-gray-400 text-[${COLORS.text}] font-semibold ${RADIUS} transition-colors flex items-center justify-center space-x-2`}
         >
           <Upload size={20} />
           <span>{TEXT.en.uploadPhoto} / {TEXT.bn.uploadPhoto}</span>
